@@ -166,3 +166,71 @@ footer i:hover{
   font-weight: bold; 
   font-style: italic;*/
 }
+
+.suplementos {  
+  display: grid;
+  grid-template-columns: 4fr 2fr;
+  grid-template-rows: 2fr 2fr 2fr 2fr 2fr 2fr ;
+  gap: 10px 15px;
+  grid-auto-flow: column;
+  grid-template-areas:
+    "proteina-descripcion proteina-imagen" 
+    
+    "hidrato-descripcion hidrato-imagen"
+    
+    "creatina-descripcion creatina-imagen"
+    
+    "magnesio-descripcion magnesio-imagen"
+    
+    "aminoacidos-descripcion aminoacidos-imagen"
+    
+    "cafeina-descripcion cafeina-imagen";
+    text-align: justify;
+  margin: 5%  20%;
+  /*padding: 10% 50px */
+}
+
+.proteina-descripcion { grid-area: proteina-descripcion; }
+
+.proteina-imagen { grid-area: proteina-imagen; }
+
+.hidrato-descripcion { grid-area: hidrato-descripcion; }
+
+.hidrato-imagen { grid-area: hidrato-imagen; }
+
+.creatina-descripcion { grid-area: creatina-descripcion; }
+
+.creatina-imagen { grid-area: creatina-imagen; }
+
+.magnesio-descripcion { grid-area: magnesio-descripcion; }
+
+.magnesio-imagen { grid-area: magnesio-imagen; }
+
+.aminoacidos-descripcion { grid-area: aminoacidos-descripcion;}
+.aminoacidos-imagen{ grid-area: aminoacidos-imagen; }
+
+.cafeina-descripcion { grid-area: cafeina-descripcion; }
+.cafeina-imagen { grid-area: cafeina-imagen; }
+
+.proteina-descripcion,.proteina-imagen,.hidrato-descripcion,.hidrato-imagen,
+.creatina-descripcion,.creatina-imagen,.magnesio-descripcion,.magnesio-imagen,
+.aminoacidos-descripcion,.aminoacidos-imagen,.cafeina-descripcion,.cafeina-imagen{
+ /* margin: 5%;*/
+ /*padding: 20px;*/
+
+}
+
+.proteina-descripcion,.proteina-imagen,.hidrato-descripcion,.hidrato-imagen,
+.creatina-descripcion,.creatina-imagen,.magnesio-descripcion,.magnesio-imagen,
+.aminoacidos-descripcion,.aminoacidos-imagen,.cafeina-descripcion,.cafeina-imagen{
+ /* margin: 5%;*/
+
+ 
+}
+
+
+
+
+.proteina-imagen,.hidrato-imagen,.creatina-imagen,.magnesio-imagen,.aminoacidos-imagen,.cafeina-imagen{
+  padding: 20%;
+}
