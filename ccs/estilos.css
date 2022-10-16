@@ -1,0 +1,168 @@
+*{
+
+  font-family: 'Frank Ruhl Libre', serif;
+}
+
+
+header {
+ background-color: black;
+ 
+}
+
+.contenedor
+{
+  display: flex;
+  align-content: flex-end;
+    
+
+}
+
+header nav a{
+  color: white;
+  text-decoration: none;
+  margin: 10px;
+  display: inline-block;
+}
+
+header nav a:hover{
+  color: tomato;
+  text-decoration:solid;   
+}
+
+
+footer{
+  height: 100px;
+  background-color: black;
+  text-align: center;
+  color: white;
+
+}
+
+header nav a:after {
+  content: "";
+  display: block;
+  margin: auto;
+  height: 2px;
+  width: 0px;
+  transition: all .8s;
+  }
+
+header nav a:hover:after {
+  width: 100%;
+  background: tomato;
+  }
+
+
+
+.pie{
+  display:inline-flex;
+  flex-direction: row;
+  align-content: flex-end;
+
+}
+
+
+
+
+
+
+
+footer i{
+    color: white;
+ 
+}
+
+footer i:hover{
+    color: tomato;
+}
+
+
+.container {  display: grid;
+    grid-template-columns: 0.5fr 1fr 0fr;
+    grid-template-rows: 2fr 2fr 2fr 2fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "Area-1 descripcion1 ."
+      "Area-2 descripcion2 ."
+      "Area-3 descripcion3 ."
+      "Area-4 descripcion4 .";
+      text-align: justify;
+  }
+  
+  .Area-1 { grid-area: Area-1; 
+            
+           }
+  
+  .descripcion1 { grid-area: descripcion1; }
+  
+  .Area-2 { grid-area: Area-2; }
+  
+  .descripcion2 { grid-area: descripcion2; }
+  
+  .Area-3 { grid-area: Area-3; }
+  
+  .descripcion3 { grid-area: descripcion3; }
+  
+  .Area-4 { grid-area: Area-4; }
+  
+  .descripcion4 { grid-area: descripcion4; }
+  
+  .Area-1, .Area-2, .Area-3, .Area-4{
+    font-family:fantasy, Arial, Helvetica, sans-serif;
+    font-size:1.0em;
+    vertical-align:middle;
+    font-weight:normal;
+    text-transform:uppercase;
+    font-weight: bold; 
+    font-style: italic;
+  }
+  
+
+  .text-justify {
+    text-align: justify;
+  }
+
+  .img {
+    box-sizing:border-box;
+    display:block;
+    width:300px;        /*Ancho de la imagen*/
+    height:150px;       /*Alto de la imagen */
+    
+  }
+  
+  .institucional {  display: grid;
+    margin: 50px 400px;
+    grid-template-columns: 2fr 3fr ;
+    grid-template-rows: 2fr 2fr 2fr ;
+    gap: 40px 50px;
+    /*grid-auto-flow: row;*/
+    grid-template-areas:
+      "quienessomos-descripcion quienessomos-imagen "
+      "mision-descripcion mision-imagen "
+      "vision-descripcion vision-imagen ";
+      text-align: justify;
+  }
+
+
+.quienessomos-descripcion { grid-area: quienessomos-descripcion;}
+
+.quienessomos-imagen { grid-area: quienessomos-imagen; }
+
+.mision-descripcion { grid-area: mision-descripcion; }
+
+.mision-imagen { grid-area: mision-imagen; }
+
+.vision-descripcion { grid-area: vision-descripcion; }
+
+.vision-imagen { grid-area: vision-imagen; }
+
+.quienessomos-descripcion, .mision-descripcion, .vision-descripcion{
+  /*font-family:fantasy, Arial, Helvetica, sans-serif;
+  font-size:1.0em;*/
+  vertical-align:middle;
+  /*font-weight:normal;
+  text-transform:uppercase;
+  font-weight: bold; 
+  font-style: italic;*/
+}
