@@ -30,13 +30,17 @@ header nav a:hover{
 }
 
 
-footer{
-  height: 100px;
+.pie{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items:center ;
   background-color: black;
-  text-align: center;
   color: white;
-
+  height: 100px;
+  width: 100%;
 }
+
 
 header nav a:after {
   content: "";
@@ -78,21 +82,19 @@ footer i:hover{
 
 
 .container {  display: grid;
-    grid-template-columns: 0.5fr 1fr 0fr;
+    grid-template-columns: 4fr 2fr;
     grid-template-rows: 2fr 2fr 2fr 2fr;
-    gap: 0px 0px;
+    gap: 20px 40px;
     grid-auto-flow: row;
     grid-template-areas:
-      "Area-1 descripcion1 ."
-      "Area-2 descripcion2 ."
-      "Area-3 descripcion3 ."
-      "Area-4 descripcion4 .";
+      "descripcion1 Area-1 "
+      "descripcion2 Area-2 "
+      "descripcion3 Area-3 "
+      "descripcion4 Area-4 ";
       text-align: justify;
   }
   
-  .Area-1 { grid-area: Area-1; 
-            
-           }
+  .Area-1 { grid-area: Area-1; }
   
   .descripcion1 { grid-area: descripcion1; }
   
@@ -108,14 +110,16 @@ footer i:hover{
   
   .descripcion4 { grid-area: descripcion4; }
   
-  .Area-1, .Area-2, .Area-3, .Area-4{
-    font-family:fantasy, Arial, Helvetica, sans-serif;
+  .descripcion1, .descripcion2, .descripcion3, .descripcion4{
+    
+     padding-top: 100px;
+    /*font-family:fantasy, Arial, Helvetica, sans-serif;
     font-size:1.0em;
-    vertical-align:middle;
+    vertical-align:middle;*/
     font-weight:normal;
-    text-transform:uppercase;
+    /*text-transform:uppercase;
     font-weight: bold; 
-    font-style: italic;
+    font-style: italic;*/
   }
   
 
@@ -126,8 +130,8 @@ footer i:hover{
   .img {
     box-sizing:border-box;
     display:block;
-    width:300px;        /*Ancho de la imagen*/
-    height:150px;       /*Alto de la imagen */
+    width:400px;        /*Ancho de la imagen*/
+    height:200px;       /*Alto de la imagen */
     
   }
   
