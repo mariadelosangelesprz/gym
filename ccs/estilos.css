@@ -238,3 +238,63 @@ footer i:hover{
 .proteina-imagen,.hidrato-imagen,.creatina-imagen,.magnesio-imagen,.aminoacidos-imagen,.cafeina-imagen{
   padding: 20%;
 }
+
+.staff {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(2fr, 1fr, 2fr,1fr);
+  /*gap: 10px 10px;*/
+  grid-auto-flow:column;
+  grid-template-areas: 
+    "coach1-imagen        coach2-imagen        coach3-imagen        coach4-imagen "
+    "coach1-descripcion   coach2-descripcion   coach3-descripcion   coach4-descripcion "
+    "coach5-imagen        coach6-imagen          coach7-imagen        coach8-imagen "
+    "coach5-descripcion   coach6-descripcion     coach7-descripcion   coach8-descripcion ";
+    text-align: justify;
+}
+
+.coach1-imagen { grid-area: coach1-imagen; }
+
+.coach1-descripcion { grid-area: coach1-descripcion; }
+
+.coach2-imagen { grid-area: coach2-imagen; }
+
+.coach2-descripcion { grid-area: coach2-descripcion; }
+
+.coach3-imagen { grid-area: coach3-imagen; }
+
+.coach3-descripcion { grid-area: coach3-descripcion; }
+
+.coach4-imagen { grid-area: coach4-imagen; }
+
+.coach4-descripcion { grid-area: coach4-descripcion; }
+
+.coach5-imagen { grid-area: coach5-imagen; }
+
+.coach5-descripcion { grid-area: coach5-descripcion; }
+  
+.coach6-imagen { grid-area: coach6-imagen; }
+
+.coach6-descripcion { grid-area: coach6-descripcion; }
+
+.coach7-imagen { grid-area: coach7-imagen; }
+
+.coach7-descripcion { grid-area: coach7-descripcion; }
+
+.coach8-imagen { grid-area: coach8-imagen; }
+
+.coach8-descripcion { grid-area: coach8-descripcion; }
+
+
+.coach1-descripcion,.coach2-descripcion,.coach3-descripcion,.coach4-descripcion,
+.coach5-descripcion, .coach6-descripcion ,.coach7-descripcion, .coach8-descripcion {
+  width: 300px;
+  text-align: center;
+}
+
+.coach1-imagen, .coach2-imagen, .coach3-imagen, .coach4-imagen,
+.coach1-imagen, .coach2-imagen, .coach3-imagen, .coach4-imagen {
+
+  background-color: antiquewhite;
+  width: 30px;
+}
