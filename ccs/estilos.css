@@ -9,10 +9,10 @@ header {
  
 }
 
-.contenedor
-{
+.contenedor{
   display: flex;
-  align-content: flex-end;
+  align-items:  flex-end;
+  justify-content: space-between;
     
 
 }
@@ -32,13 +32,11 @@ header nav a:hover{
 
 .pie{
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items:center ;
+  align-items: center;
+  justify-content:space-between;
   background-color: black;
   color: white;
   height: 100px;
-  width: 100%;
 }
 
 
@@ -55,21 +53,6 @@ header nav a:hover:after {
   width: 100%;
   background: tomato;
   }
-
-
-
-.pie{
-  display:inline-flex;
-  flex-direction: row;
-  align-content: flex-end;
-
-}
-
-
-
-
-
-
 
 footer i{
     color: white;
@@ -245,6 +228,7 @@ footer i:hover{
   grid-template-rows: repeat(2fr, 1fr, 2fr,1fr);
   /*gap: 10px 10px;*/
   grid-auto-flow:column;
+  margin: 50px 100px 50px 100px;
   grid-template-areas: 
     "coach1-imagen        coach2-imagen        coach3-imagen        coach4-imagen "
     "coach1-descripcion   coach2-descripcion   coach3-descripcion   coach4-descripcion "
@@ -295,6 +279,22 @@ footer i:hover{
 .coach1-imagen, .coach2-imagen, .coach3-imagen, .coach4-imagen,
 .coach1-imagen, .coach2-imagen, .coach3-imagen, .coach4-imagen {
 
-  background-color: antiquewhite;
-  width: 30px;
+/*  width: 100px;*/
+
 }
+
+.coach1-imagen, .coach2-imagen, .coach3-imagen, .coach4-imagen,
+.coach1-imagen, .coach2-imagen, .coach3-imagen, .coach4-imagen :hover {
+
+  /*width: 1000px;
+  color:blue*/
+
+}
+
+ img:hover{
+  
+  border: 2px solid tomato
+  
+ 
+}
+
