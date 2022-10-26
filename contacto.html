@@ -84,13 +84,13 @@
 <script>
 function validarEnviar() {
             
-            if (document.formulario.nombre.value.length <= 30 ) {
+            if (document.formulario.nombre.value.length == 0 ) {
                 alert("Tiene que escribir su nombre")
                 document.formulario.nombre.focus()
                 return 0;
             }
 
-            if (document.formulario.email.value.length <= 50 ) {
+            if (document.formulario.email.value.length == 0 ) {
                 alert("Tiene que escribir un email")
                 document.formulario.email.focus()
                 return 0;
