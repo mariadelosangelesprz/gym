@@ -409,7 +409,7 @@ animation-iteration-count: 1;
 /*----------------------------------------------------------------*/
 @media only screen and (max-width: 1000px) {
   .staff {
-    grid-auto-flow:row;
+    /*grid-auto-flow:row;*/
 
       gap: 5px;
       grid-template: 4fr 1fr 4fr 1fr / 1fr 1fr 1fr ; 
@@ -417,7 +417,9 @@ animation-iteration-count: 1;
       /* Distribuimos el contenido en cada fila */
       grid-template-areas: 
       "coach1-imagen       coach2-imagen         coach3-imagen           "
-      "coach1-descripcion  coach2-descripcion    coach3-descripcion      ";
+      "coach1-descripcion  coach2-descripcion    coach3-descripcion      "
+      "coach4-imagen       coach5-imagen         coach6-imagen           "
+      "coach4-descripcion  coach5-descripcion    coach6-descripcion      ";
 
       text-align: center;
       align-items: center;

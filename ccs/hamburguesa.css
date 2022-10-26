@@ -1,0 +1,66 @@
+ul{
+    display: none;
+ }
+
+ input:checked ~ ul{
+ display:block;
+ }
+
+ input {
+ display: none;
+ }
+
+ label {
+ box-sizing: border-box;
+     display: inline-block;
+     align-content:flex-start ;
+    /* border: 1px solid black;*/
+     border-radius: 10px;
+     width: 30px;
+     height: 30px;
+     line-height: 30px;
+     font-weight: bold;
+     text-align: center;
+     user-select: none;
+     color: tomato;
+    
+     }
+    
+     /* Estilo del boton cuando se pasa el mouse por encima*/
+     label:hover{
+     background:black;
+     }
+    
+     /* Estilo del boton cuando el menú está expandido*/
+     input:checked ~ label {
+    /* background: lightgrey; */
+    
+     }
+    
+     ul{
+     margin-top:0;
+     padding: 0;
+     width: 200px;
+    
+     position: relative;
+     left: -175px;
+    
+     }
+    
+    
+     li {
+     display: block;
+     background: tomato;
+     margin: 0;
+     padding: 10px;
+     list-style: none;
+     border-bottom: 1px solid white;
+     }
+    
+     li:hover {
+     filter: brightness(130%);
+     }
+     nav {
+     position: relative;
+     left: 650px;
+     }

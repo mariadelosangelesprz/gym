@@ -43,28 +43,23 @@
     <div class="contacto">
 
            <div class="formulario">
-                <form action="">
+                <form name="formulario">
                     <div>
-                        <label for="nombre">Nombre</label> <br>
-                        <input type="text" id = 'nombre' placeholder="Nombre *" >
+                        <label for="nombre">Nombre Completo</label> <br>
+                        <input type="text" id = "nombre" size = "30" maxlength = "100" placeholder="Nombre *" >
 
                     </div>
                     <div>
                         <label for="email" >Email</label> <br>
-                        <input type="email" id="email" placeholder="Email *">
+                        <input type="email" id="email" size = "50" maxlength = "100" placeholder="Email *">
                     </div>
                     <div>
-                        <label for="asunto placeholder="asunto *"">Asunto</label> <br>
-                        <input type="text" id="asunto" placeholder="Asunto *">
+                        <label for="asunto" placeholder="asunto *"">Asunto</label> <br>
+                        <input type="text" id="asunto" size = "50" maxlength = "200" placeholder="Asunto *">
                     </div>
-                    <div>
-                        <label for="asunto placeholder="Asunto *"">mensaje</label> <br>
-                        <textarea id="mensaje" name="mensaje" rows="5" cols="50"  text="mensaje *">
-                            
-                        </textarea>
-                    </div>
+
                     <div class="swing">
-                        <input type="submit" onclick= "return enviarFormulario();" value="Enviar mensaje" style="background-color:green ; height:80px; color:white ; text-transform: uppercase;">
+                        <input type="submit" onclick= "return validarEnviar();" value="Enviar mensaje" style="background-color:green ; height:80px; color:white ; text-transform: uppercase;">
                     </div>    
                 </form>
     
@@ -86,6 +81,32 @@
     </div>
 
 <script src="comportamiento.js"></script>
+<script>
+function validarEnviar() {
+            
+            if (document.formulario.nombre.value.length <= 30 ) {
+                alert("Tiene que escribir su nombre")
+                document.formulario.nombre.focus()
+                return 0;
+            }
+
+            if (document.formulario.email.value.length <= 50 ) {
+                alert("Tiene que escribir un email")
+                document.formulario.email.focus()
+                return 0;
+            }
+
+            if (document.formulario.asunto.value.length ==0 ) {
+                alert("Tiene que escribir un asunto")
+                document.formulario.asunto.focus()
+                return 0;
+            }
+
+            alert("Muchas gracias por enviar el formulario");
+            document.formulario.submit();
+        }
+        
+</script>
 
 </body>
 
