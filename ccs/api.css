@@ -1,0 +1,31 @@
+.clima {
+  display: flex;
+  flex-direction: row;
+  align-items: baseline;
+  justify-content: flex-end;
+    background-color:black;
+    padding: 20px;
+    color: white;
+    width: 100%;
+    height: 1%;
+  }
+
+.temperatura{
+  color: tomato;
+  font-size:x-large;
+  font-weight: bold;
+  margin-left: 10px;
+
+}
+
+
+#location {
+    font-weight: bold;
+    font-size: 15px;  
+
+}
+.datos{
+  margin-right: 100px;
+  margin-top: 20px;
+  font-size: 15px;
+}
