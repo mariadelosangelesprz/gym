@@ -3,9 +3,16 @@
   font-family: 'Frank Ruhl Libre', serif;
 }
 
+body{
+  margin: 0px;
+
+}
 
 header {
  background-color: black;
+ width: 100%;
+ margin: 0px;
+ height: 80px;
  
 }
 
@@ -13,6 +20,7 @@ header {
   display: flex;
   align-items:  flex-end;
   justify-content: space-between;
+  margin: 0px;
     
 
 }
@@ -55,6 +63,9 @@ header nav a:hover:after {
   background: tomato;
   }
 
+  footer{
+    margin: 0px;
+  }
 footer i{
     color: white;
  
@@ -70,7 +81,7 @@ footer i:hover{
   justify-content:center;
   flex-flow: row;
   margin-top: 10px;
-  margin-bottom: 180px;
+  margin-bottom: 230px;
   
 }
 
@@ -325,21 +336,6 @@ animation-iteration-count: 1;
 .cafeina-descripcion { grid-area: cafeina-descripcion; }
 .cafeina-imagen { grid-area: cafeina-imagen; }
 
-.proteina-descripcion,.proteina-imagen,.hidrato-descripcion,.hidrato-imagen,
-.creatina-descripcion,.creatina-imagen,.magnesio-descripcion,.magnesio-imagen,
-.aminoacidos-descripcion,.aminoacidos-imagen,.cafeina-descripcion,.cafeina-imagen{
- /* margin: 5%;*/
- /*padding: 20px;*/
-
-}
-
-.proteina-descripcion,.proteina-imagen,.hidrato-descripcion,.hidrato-imagen,
-.creatina-descripcion,.creatina-imagen,.magnesio-descripcion,.magnesio-imagen,
-.aminoacidos-descripcion,.aminoacidos-imagen,.cafeina-descripcion,.cafeina-imagen{
- /* margin: 5%;*/
-
- 
-}
 
 
 
@@ -354,14 +350,15 @@ animation-iteration-count: 1;
   grid-template-rows: 2fr 1fr 2fr 1fr;
   /*gap: 10px 10px;*/
   grid-auto-flow:column;
-  margin: 50px 100px 50px 100px;
+  margin: 25px 10px 25px 100px;
   grid-template-areas: 
     "coach1-imagen        coach2-imagen        coach3-imagen        coach4-imagen "
     "coach1-descripcion   coach2-descripcion   coach3-descripcion   coach4-descripcion "
     "coach5-imagen        coach6-imagen          coach7-imagen        coach8-imagen "
     "coach5-descripcion   coach6-descripcion     coach7-descripcion   coach8-descripcion ";
-    text-align: justify;
-      margin-left: 20px
+     margin-left: 140px;
+     align-content: space-between
+    
 }
 
 .coach1-imagen { grid-area: coach1-imagen; }
@@ -411,21 +408,21 @@ animation-iteration-count: 1;
   .staff {
 
       gap: 5px;
-      grid-template: 4fr 1fr 4fr 1fr / 1fr 1fr 1fr ; 
+      grid-template: 4fr 1fr 4fr 1fr 4fr 1fr/ 1fr 1fr 1fr ; 
 
       /* Distribuimos el contenido en cada fila */
       grid-template-areas: 
       "coach1-imagen       coach2-imagen         coach3-imagen           "
       "coach1-descripcion  coach2-descripcion    coach3-descripcion      "
       "coach4-imagen       coach5-imagen         coach6-imagen           "
-      "coach4-descripcion  coach5-descripcion    coach6-descripcion      ";
+      "coach4-descripcion  coach5-descripcion    coach6-descripcion      "
+      "coach7-imagen       coach8-imagen                    "
+      "coach7-descripcion  coach8-descripcion               ";
 
       text-align: center;
       align-items: center;
       margin-right: 5px;
-      margin-left: 20px;
-      
-      
+      margin-left: 20px;   
   }
 
 }
@@ -454,13 +451,13 @@ animation-iteration-count: 1;
       "coach7-imagen       coach8-imagen"
       "coach7-descripcion  coach8-descripcion";
   }
-  .coach1-descripcion,.coach2-descripcion,.coach3-descripcion,.coach4-descripcion,
-  .coach5-descripcion, .coach6-descripcion ,.coach7-descripcion, .coach8-descripcion {
-    margin-left: 60px;
-  }
-  header .contenedor .img {
-    width: 40%;
-  }
+        .coach1-descripcion,.coach2-descripcion,.coach3-descripcion,.coach4-descripcion,
+        .coach5-descripcion, .coach6-descripcion ,.coach7-descripcion, .coach8-descripcion {
+          margin-left: 60px;
+        }
+        header .contenedor .img {
+          width: 40%;
+        }
 
 
 }
