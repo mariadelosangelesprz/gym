@@ -351,7 +351,7 @@ animation-iteration-count: 1;
 .staff {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: repeat(2fr, 1fr, 2fr,1fr);
+  grid-template-rows: 2fr 1fr 2fr 1fr;
   /*gap: 10px 10px;*/
   grid-auto-flow:column;
   margin: 50px 100px 50px 100px;
@@ -409,7 +409,6 @@ animation-iteration-count: 1;
 /*----------------------------------------------------------------*/
 @media only screen and (max-width: 1000px) {
   .staff {
-    /*grid-auto-flow:row;*/
 
       gap: 5px;
       grid-template: 4fr 1fr 4fr 1fr / 1fr 1fr 1fr ; 
