@@ -81,7 +81,7 @@ footer i:hover{
   justify-content:center;
   flex-flow: row;
   margin-top: 10px;
-  margin-bottom: 230px;
+  margin-bottom: 230px;sta
   
 }
 
@@ -407,8 +407,11 @@ animation-iteration-count: 1;
 @media only screen and (max-width: 1000px) {
   .staff {
 
-      gap: 5px;
-      grid-template: 4fr 1fr 4fr 1fr 4fr 1fr/ 1fr 1fr 1fr ; 
+      /*gap : 10px;*/
+      grid-template-rows: 2fr 1fr 2fr 1fr 2fr 1fr 2fr 1fr /300px 300px 300px  ; 
+      
+      
+      
 
       /* Distribuimos el contenido en cada fila */
       grid-template-areas: 
@@ -416,16 +419,58 @@ animation-iteration-count: 1;
       "coach1-descripcion  coach2-descripcion    coach3-descripcion      "
       "coach4-imagen       coach5-imagen         coach6-imagen           "
       "coach4-descripcion  coach5-descripcion    coach6-descripcion      "
-      "coach7-imagen       coach8-imagen                    "
-      "coach7-descripcion  coach8-descripcion               ";
-
+      "coach7-imagen       coach8-imagen             coach8-imagen                    "
+      "coach7-descripcion  coach8-descripcion       coach8-descripcion                     ";
+      
       text-align: center;
       align-items: center;
       margin-right: 5px;
-      margin-left: 20px;   
+      margin-left: 20px;
+      height: auto;      
   }
 
+  .coach1-descripcion,.coach2-descripcion,.coach3-descripcion,.coach4-descripcion,
+  .coach5-descripcion, .coach6-descripcion ,.coach7-descripcion, .coach8-descripcion {
+    margin-top: 0px;
+    margin-bottom: 0px;
+    margin-left: 130px;
+    height: auto;
+    width: 50px;
+  }
+ .coach1-imagen,.coach2-imagen,.coach3-imagen,.coach4-imagen,
+.coach5-imagen, .coach6-imagen ,.coach7-imagen, .coach8-imagen {
+  /*margin-bottom: 100px;*/
+  /*width: 300px;*/
+    margin: 5px;
+  /* height: 10px;*/
+  
 }
+
+
+.coach1-descripcion,.coach2-descripcion,.coach3-descripcion,.coach4-descripcion,
+  .coach5-descripcion, .coach6-descripcion ,.coach7-descripcion, .coach8-descripcion {
+  
+  margin-bottom: 0px; 
+  margin-top: 0px;
+ margin-left: 50px;
+  width: 100px;
+
+}
+
+.coach1-descripcion,.coach2-descripcion,.coach3-descripcion,.coach4-descripcion,
+  .coach5-descripcion, .coach6-descripcion ,.coach7-descripcion, .coach8-descripcion h5{
+  
+    text-align:center;
+  margin-right: 0px;  
+  margin-bottom: 0px; 
+  margin-top: 0px;
+  width: 200px;
+
+}
+
+
+}
+
 
 
 
@@ -453,9 +498,8 @@ animation-iteration-count: 1;
   }
         .coach1-descripcion,.coach2-descripcion,.coach3-descripcion,.coach4-descripcion,
         .coach5-descripcion, .coach6-descripcion ,.coach7-descripcion, .coach8-descripcion {
-          margin-left: 60px;
-        }
-        header .contenedor .img {
+          margin-left: 100px;
+        }        header .contenedor .img {
           width: 40%;
         }
 
@@ -489,8 +533,9 @@ animation-iteration-count: 1;
         "coach7-descripcion   "
         "coach8-imagen        "
         "coach8-descripcion   ";
-        /*text-align: center;*/
-        /*align-items: center;*/
+        /*text-align: center;
+        align-items: center;*/
+        
 
 
 
@@ -510,7 +555,7 @@ animation-iteration-count: 1;
 
       .coach1-descripcion,.coach2-descripcion,.coach3-descripcion,.coach4-descripcion,
       .coach5-descripcion, .coach6-descripcion ,.coach7-descripcion, .coach8-descripcion {
-        margin-left: 160px;
+        margin-left: 220px;
       }
       
       
